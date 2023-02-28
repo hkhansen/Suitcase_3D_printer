@@ -1,0 +1,85 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# connectors_1x2-header
+#
+DEF connectors_1x2-header JP 0 40 Y Y 1 F N
+F0 "JP" 50 190 39 H V C CNN
+F1 "connectors_1x2-header" 80 -110 39 H V C CNN
+F2 "Arduino:JST_XH_2" -25 475 39 H I C CNN
+F3 "" -25 475 39 H I C CNN
+DRAW
+S 0 150 110 -60 0 1 0 f
+X 1 1 -100 100 100 R 35 35 1 1 I
+X 2 2 -100 0 100 R 35 35 1 1 I
+ENDDRAW
+ENDDEF
+#
+# connectors_1x5-header
+#
+DEF connectors_1x5-header JP 0 40 Y Y 1 F N
+F0 "JP" 60 290 39 H V C CNN
+F1 "connectors_1x5-header" 50 -450 39 H V C CNN
+F2 "Arduino:JST_XH_5" 0 200 39 H I C CNN
+F3 "" 0 200 39 H I C CNN
+DRAW
+S 0 250 120 -250 0 1 0 f
+X 1 1 -100 200 100 R 35 35 1 1 I
+X 2 2 -100 100 100 R 35 35 1 1 I
+X 3 3 -100 0 100 R 35 35 1 1 I
+X 4 4 -100 -100 100 R 35 35 1 1 I
+X 5 5 -100 -200 100 R 35 35 1 1 I
+ENDDRAW
+ENDDEF
+#
+# connectors_2x5-header
+#
+DEF connectors_2x5-header JP 0 35 Y Y 1 F N
+F0 "JP" 0 310 35 H V C CNN
+F1 "connectors_2x5-header" 0 -300 35 H V C CNN
+F2 "Arduino:2x5_pin" 0 -25 35 H V C CNN
+F3 "" 0 -25 35 H V C CNN
+DRAW
+S -100 260 100 -260 0 1 0 f
+X 1 1 -200 200 100 R 35 35 1 1 B
+X 10 10 200 -200 100 L 35 35 1 1 B
+X 2 2 200 200 100 L 35 35 1 1 B
+X 3 3 -200 100 100 R 35 35 1 1 B
+X 4 4 200 100 100 L 35 35 1 1 B
+X 5 5 -200 0 100 R 35 35 1 1 B
+X 6 6 200 0 100 L 35 35 1 1 B
+X 7 7 -200 -100 100 R 35 35 1 1 B
+X 8 8 200 -100 100 L 35 35 1 1 B
+X 9 9 -200 -200 100 R 35 35 1 1 B
+ENDDRAW
+ENDDEF
+#
+# dtusat-power_+5V
+#
+DEF dtusat-power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 35 H I C CNN
+F1 "dtusat-power_+5V" 0 140 35 H V C CNN
+F2 "" 0 0 35 H V C CNN
+F3 "" 0 0 35 H V C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 35 35 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# dtusat-power_GND
+#
+DEF dtusat-power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 35 H I C CNN
+F1 "dtusat-power_GND" 0 -150 35 H V C CNN
+F2 "" 0 0 35 H V C CNN
+F3 "" 0 0 35 H V C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 35 35 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
